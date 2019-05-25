@@ -93,7 +93,6 @@
             set background=dark
         endif
     endfunction
-    noremap <leader>bg :call ToggleBG()<CR>
 
     " if !has('gui')
         "set term=$TERM          " Make arrow and other keys work
@@ -300,6 +299,9 @@
     else
         let s:spf13_apply_config_mapping = g:spf13_apply_config_mapping
     endif
+
+    " Change background color
+    noremap <leader>bg :call ToggleBG()<CR>
 
     " Easier moving in tabs and windows
     " The lines conflict with the default digraph mapping of <C-K>
